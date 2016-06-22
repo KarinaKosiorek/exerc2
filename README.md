@@ -1,3 +1,7 @@
+-----------------------------------------------
+MySQL database with example records:
+-----------------------------------------------
+
 CREATE DATABASE Test;
 USE Test;
 
@@ -47,7 +51,9 @@ VALUES (2, 1, 'B2', 4);
 INSERT INTO Building
 VALUES (3, 2, 'B3', 1);
 
-1)
+-----------------------------------------------
+Answer to 1)
+-----------------------------------------------
 SELECT Country.CountryID, Country.Name FROM 
 Country
 INNER JOIN 
@@ -56,7 +62,9 @@ ON Country.CountryID = City.CountryID
 GROUP BY Country.CountryID
 HAVING SUM(City.Population) > 400;
 
-2)
+-----------------------------------------------
+Answer to 2)
+-----------------------------------------------
 SELECT Country.Name FROM 
 Country 
 LEFT JOIN 
